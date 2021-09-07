@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Concierge | ハウスコンシェルジュ</title>
+
+    <!------------ GOOGLE FONTS ------------>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Lato|Fjalla+One|Montserrat|Roboto&display=swap"
+        rel="stylesheet">
+
+    <!------------ FONT AWESOME ------------>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <!------------ CUSTOM STYLE SHEET ------------>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+    <div class="slider">
+        <div class="banner">
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">トップ</a></li>
+                    <li><a href="#">販売物件について</a></li>
+                    <li><a href="#">不動産売却</a></li>
+                    <li><a href="#">会社概要</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="slides">
+            <div class="slide">
+                <div class="slide-data">
+                    <button><a href="#"></a>お問い合わせ <i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-data">
+                    <button><a href="#"></a>お問い合わせ <i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-data">
+                    <button><a href="#"></a>お問い合わせ <i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-data">                  
+                    <button><a href="#"></a>お問い合わせ <i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <button class="arrows prev" onclick="plusslide(-1)">
+            <span><i class="fas fa-angle-left"></i></span>
+        </button>
+        <button class="arrows next" onclick="plusslide(1)">
+            <span><i class="fas fa-angle-right"></i></span>
+        </button>
+
+        <div class="dots">
+            <span onclick="currentslide(1)"></span>
+            <span onclick="currentslide(2)"></span>
+            <span onclick="currentslide(3)"></span>
+            <span onclick="currentslide(4)"></span>
+        </div>
+    </div>
+    </header>
+    <section>
+        <div class="hero-image">
+            <div class="box"><img src="img/photo-1.jpg" ></div>
+            <div class="box"><img src="img/photo-2.jpg" ></div>
+            <div class="box"><img src="img/photo-3.jpg" ></div>
+            <div class="box"><img src="img/photo-4.jpg" ></div>
+        </div>
+    </section>
+    <footer>
+        <div id="footnav">
+            <div class="logo">
+            <img src="img/logo.png" alt="">
+            </div>
+                <div class="menu">
+                <ul>
+                    <li><a href="#">トップ</a><h2>home</h2></li>
+                    <li><a href="#">販売物件について</a><h2>Company Profile</h2></li>
+                    <li><a href="#">不動産売却</a><h2>CIC transfer</h2></li>
+                    <li><a href="#">会社概要</a><h2>JICC transfer</h2></li>
+                </ul>
+                <div class="loc">
+                <h1>千葉市若葉区高品町1589-11 　TEL／043-497-2977 　FAX／043-497-2978</h1>
+                </div>
+                </div>
+        </div>
+        <h3>Copyright(C) 2021Landest. All Rights Reserved</h3>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

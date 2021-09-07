@@ -1,0 +1,250 @@
+:root {
+    --primary-color: #e95504;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+    position: relative;
+
+}.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: santa 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.8rem;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+} 
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/* slide show */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+.slides {
+    position: absolute;
+    width: 400%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 2s ease;
+    
+}
+
+.slide {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    float: left;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide:nth-child(1) {
+    background-image: url(img/IMG-1.jpg);   
+}
+.slide:nth-child(2) {
+    background-image: url(img/IMG-2.JPG);
+}
+.slide:nth-child(3) {
+    background-image: url(img/IMG-3.JPG);
+}
+.slide:nth-child(4) {
+    background-image: url(img/IMG-4.JPG);
+}
+
+.slide-data {
+    content: '';
+    position: absolute;
+    top: 90%;
+    right: 9%;
+    transform: translateY(-50%);
+    width: 100%;
+    justify-content: left;
+    text-align: left;
+    color: #fff;
+    padding: 0 20%;
+}
+
+.slide-data button {
+    font-family: "Roboto", serif;
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    color: var(--primary-color);
+    font-weight: bolder;
+    padding: 5px 10px;
+    font-size: 15px;
+    transition: 0.4s linear;
+}
+
+.slide-data button:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+.slider .arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    color: #fff;
+    transition: 0.4s linear;
+}
+
+.slider .arrows:hover {
+    text-shadow: 0px 0px 10px black, 0px 0px 10px black;
+}
+
+.slider .prev {
+    left: 3%;
+}
+
+.slider .next {
+    right: 3%;
+}
+
+.dots {
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+.dots span {
+    width: 13px;
+    height: 13px;
+    border-radius: 100px;
+    margin: 0 6px;
+    background-color: rgb(156, 156, 156);
+    display: inline-block;
+    transition: 0.4s linear;
+}
+
+.dots span:hover {
+    background-color: #fff !important;
+}
+
+.dot-active {
+    background-color: #fff !important;
+}
+
+/* hero-image */
+.hero-image {
+    display: grid;
+    grid-column: auto;
+}
+
+img {
+    width: 100%;
+}
+
+/* footer */
+
+#footnav {
+    display: grid;
+    grid-template-areas: 
+    'logo menu menu menu menu'
+    'logo loc loc loc loc';
+    background: var(--primary-color);
+}
+
+.logo {
+    grid-area: logo;
+    width: 300px;
+    padding: 20px;
+}
+
+.menu {
+    grid-area: menu;
+    text-align: center;
+}
+
+.menu ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    list-style: none;
+    padding-top: 30px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu ul li a:hover{
+    color: rgb(44, 29, 29);
+}
+.menu ul li h2 {
+    color: #fff;
+    font-size: 10px;
+}
+
+.loc {
+    grid-area: loc;
+}
+
+.loc h1 {
+    font-size: 15px;
+    padding: 20px;
+    color: #fff;
+}
+
+
+
+footer h3 {
+    text-align: center;
+    font-size: 13px;
+    padding: 15px;
+}
